@@ -127,6 +127,21 @@
                     <view key="view" contentMode="scaleToFill" id="fPQ-7V-huM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KLB-Q4-HAk">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="0.082911960780620575" green="0.020837860181927681" blue="0.035261128097772598" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Register" id="47f-sT-fXq">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" image="ArrowBack" id="PXd-3H-1LD">
+                                            <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dya-Et-u5N"/>
                     </view>
@@ -137,6 +152,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ArrowBack" width="72" height="72"/>
         <image name="Logo" width="170.5" height="170.5"/>
         <image name="Wallpaper" width="2240" height="1493"/>
     </resources>
