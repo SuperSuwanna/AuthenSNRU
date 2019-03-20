@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="bRe-He-dR7">
+                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="bRe-He-dR7">
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="tintColor" red="0.048926807940006256" green="0.037180416285991669" blue="0.11466140300035477" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
@@ -128,9 +128,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KLB-Q4-HAk">
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KLB-Q4-HAk">
                                 <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.082911960780620575" green="0.020837860181927681" blue="0.035261128097772598" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
@@ -141,11 +140,65 @@
                                                 <action selector="backButton:" destination="sQC-mt-iZR" id="aFF-Ju-vG3"/>
                                             </connections>
                                         </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Item" image="CloudUpload" id="pqL-tM-P9d">
+                                            <connections>
+                                                <action selector="uploadButton:" destination="sQC-mt-iZR" id="oYD-Va-Y4r"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView userInteractionEnabled="NO" alpha="0.55000000000000004" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="gBr-hu-ksq">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wbC-Xl-Nvj">
+                                <rect key="frame" x="94" y="186" width="226" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="QKG-cE-7uL"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="226" id="pNl-Zz-5GK"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A0M-jy-hUI">
+                                <rect key="frame" x="94" y="224" width="226" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="DYR-hp-aBA"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="226" id="QQI-JR-tBq"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password:" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pdn-vn-JTr">
+                                <rect key="frame" x="94" y="262" width="226" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6G9-XR-b38"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="226" id="WJj-k1-gUZ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KLB-Q4-HAk" firstAttribute="leading" secondItem="dya-Et-u5N" secondAttribute="leading" id="1lZ-3h-gfa"/>
+                            <constraint firstItem="gBr-hu-ksq" firstAttribute="leading" secondItem="dya-Et-u5N" secondAttribute="leading" id="3aC-bt-l3R"/>
+                            <constraint firstItem="pdn-vn-JTr" firstAttribute="top" secondItem="A0M-jy-hUI" secondAttribute="bottom" constant="8" id="3cj-WB-BvJ"/>
+                            <constraint firstItem="gBr-hu-ksq" firstAttribute="bottom" secondItem="dya-Et-u5N" secondAttribute="bottom" id="5Qc-aI-bYj"/>
+                            <constraint firstItem="A0M-jy-hUI" firstAttribute="centerX" secondItem="fPQ-7V-huM" secondAttribute="centerX" id="9G9-Jr-TfT"/>
+                            <constraint firstItem="gBr-hu-ksq" firstAttribute="top" secondItem="dya-Et-u5N" secondAttribute="top" constant="44" id="EvA-y5-YQb"/>
+                            <constraint firstItem="KLB-Q4-HAk" firstAttribute="trailing" secondItem="dya-Et-u5N" secondAttribute="trailing" id="Fff-Zc-vWs"/>
+                            <constraint firstItem="pdn-vn-JTr" firstAttribute="centerX" secondItem="fPQ-7V-huM" secondAttribute="centerX" id="PHJ-hw-75V"/>
+                            <constraint firstItem="KLB-Q4-HAk" firstAttribute="top" secondItem="dya-Et-u5N" secondAttribute="top" id="TmB-yr-hFD"/>
+                            <constraint firstItem="wbC-Xl-Nvj" firstAttribute="centerX" secondItem="fPQ-7V-huM" secondAttribute="centerX" id="heE-FV-M1R"/>
+                            <constraint firstItem="A0M-jy-hUI" firstAttribute="top" secondItem="wbC-Xl-Nvj" secondAttribute="bottom" constant="8" id="mId-QY-Aec"/>
+                            <constraint firstItem="wbC-Xl-Nvj" firstAttribute="top" secondItem="KLB-Q4-HAk" secondAttribute="bottom" constant="98" id="tYJ-sZ-TKL"/>
+                            <constraint firstItem="gBr-hu-ksq" firstAttribute="trailing" secondItem="dya-Et-u5N" secondAttribute="trailing" id="xIb-i4-cFn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dya-Et-u5N"/>
                     </view>
                     <connections>
@@ -154,11 +207,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rq0-t2-GTl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="996" y="134"/>
+            <point key="canvasLocation" x="995.65217391304361" y="133.92857142857142"/>
         </scene>
     </scenes>
     <resources>
         <image name="ArrowBack" width="72" height="72"/>
+        <image name="CloudUpload" width="72" height="72"/>
         <image name="Logo" width="170.5" height="170.5"/>
         <image name="Wallpaper" width="2240" height="1493"/>
     </resources>
