@@ -137,6 +137,9 @@
                                     <navigationItem title="Register" id="47f-sT-fXq">
                                         <barButtonItem key="leftBarButtonItem" title="Back" image="ArrowBack" id="PXd-3H-1LD">
                                             <color key="tintColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                                            <connections>
+                                                <action selector="backButton:" destination="sQC-mt-iZR" id="aFF-Ju-vG3"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -145,6 +148,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="dya-Et-u5N"/>
                     </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="BackMain" id="A02-lk-meA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rq0-t2-GTl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
