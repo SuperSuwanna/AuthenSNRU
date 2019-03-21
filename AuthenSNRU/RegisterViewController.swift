@@ -68,7 +68,12 @@ class RegisterViewController: UIViewController {
         
     } //myAlert
     
+    func uploadData(name: String,user: String,password: String) -> Void {
+        
+        let uriString:  String = "https://www.androidthai.in.th/snru/addDataSuwanna.php?isAdd=true&Name=\(name)&User=\(user)&Password=\(password)"
+        
     
+    }
     
     
 
